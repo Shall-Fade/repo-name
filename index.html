@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="bg">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="home">
+            <h2>About me</h2>
+            <p>○ Hi, my name is <b>Marat</b>. I am a future front-end developer. I am engaged in the codecademy.com website. I wish to gain knowledge and start making money on it.
+            By the way, I am coding already: <span class="number" id="time-container"></span> days</p>
+            <p>○ I have the skills: HTML, CSS, JavaScript, React.js, Angular, Node.js, Git</p>
+            <img class="code" src="Pictures/code.png">
+        </div>
+    </div>
+    <div id="portfolio">
+        <h2 class="port-style">Portfolio</h2>
+        <details class="project">
+            <summary class="project-title">
+                <h3>Japan Web Site</h3>
+            </summary>
+            <p class="project-description">• This is my first web page. With html, css and JavaScript. Responsiveness site.</p>
+            <img src="" class="project-image">
+            <img src="" class="project-image">
+        </details>
+        <details class="project">
+            <summary class="project-title">
+                <h3>Colibri Web Site</h3>
+            </summary>
+            <p class="project-description">• This is my second web page. With html and css. A bit of animation and responsiveness.</p>
+            <img src="Pictures/1/colibri1.png" class="project-image">
+            <img src="Pictures/1/colibri3.png" class="project-image">
+        </details>
+    </div>
+    <div id="certificates">
+        <h2>Certificates</h2>
+        <p>
+            <img src="Pictures/certificates/sertificate1.jpg">
+        </p>
+    </div>
+    <footer>
+        Made with 
+        <span class="heart">♥</span>
+         in Khasanya
+    </footer>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "07-08-2020";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+        setInterval(() => {
+            const now = new Date();
+            const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000 / 60 / 60 / 24
+      );
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+    </script>
+</body>
+</html>

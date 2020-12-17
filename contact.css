@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    padding-left: 120px;
+}
+
+nav {
+    padding: 0 150px;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.navbar li {
+    display: flex;
+    padding: 10px 30px;
+}
+
+label {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.navbar a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: rgba(243, 0, 211, 0.877);
+}
+
+.container div {
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    resize: vertical;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+}
+
+p {
+    text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+    margin-top: 6px;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+textarea {
+    height: 170px;
+}
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
